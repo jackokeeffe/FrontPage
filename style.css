@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* General CSS */
+* {
+  font-family: Lato, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+ text-align: center;
+
+}
+
+img {
+  align-items: stretch;
+}
+
+/* Element Based CSS */
+.intro-info {
+  padding-top: 1%;
+}
+
+.title {
+  width: 73%;
+  padding-left: 13%;
+}
+
+.description {
+  width: 73%;
+  text-align: left;
+  padding-left: 15%;
+}
+
+.source {
+  padding-bottom: 3%;
+}
+
+.story {
+  width: 30%;
+  display:inline-block;
+  padding-top: 5%;
+  vertical-align: top;
+}
+
+.story img {
+  height: 200px;
+  /*height: 1vh;*/
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 2%;
+  background-color: green;
+  border-radius: 15px;
+}
+
+/* Footer Area CSS */
+.footer {
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer p {
+  font-size: 125%;
+  display: inline;
+}
+
+.footer i {
+  font-size: 125%;
+  color: white;
+}
+
+.footer li {
+  display: inline;
+}
+
+a:hover {
+  color: #d1d1d1;
+}
+
+/* Media Query for Phones */
+@media only screen and (max-width: 600px) {
+  * {
+    padding: 0;
+  }
+  .story {
+    display: block;
+    width: 100%;
+  }
+  .image {
+    width: 90%;
+  }
+  #last-story {
+    padding-bottom: 12%;
+  }
+}
