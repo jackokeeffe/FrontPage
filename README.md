@@ -2,6 +2,8 @@
 
 A minimal tech news aggregator. [Test it here](https://jackokeeffe.me/FrontPage/)
 
+**NOTE:** The API (hosted on Heroku) may take up to 10-15 seconds to load the content, due to the limitations of the free plan.
+
 ![Website Preview Gif](https://cdn.glitch.com/366c5838-3763-4787-9bd2-8eefd6b529ab%2Fpreview.gif?v=1623615357210)
 
 ### How-To Run Locally:
