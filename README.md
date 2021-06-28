@@ -8,7 +8,7 @@ A minimal tech news aggregator. [Test it here](https://jackokeeffe.me/FrontPage/
 
 ### How-To Run Locally:
 1. Clone this repo `git clone https://github.com/jackokeeffe/FrontPage.git` into your command prompt.
-2. If your outermost folder is not FrontPage type `cd FrontPage` into your command prompt.
+2. If your outermost folder is not FrontPage/backend type `cd FrontPage/backend` into your command prompt.
 3. Type `python setup.py install` into your command prompt. Wait for it to finish installing packages.
 4. Run app.py, this will return a link (http://127.0.0.1:5000/).
 5. In display.js, change the api_url variable to this link with 'news/' at the end (ex. http://127.0.0.1:5000/news/).
