@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+a{
+  color: white;
+}
+
 body {
  text-align: center;
 
@@ -17,6 +21,26 @@ img {
 }
 
 /* Element Based CSS */
+#popup{
+  border-radius: 15px;
+  padding: 1.5% 2% 1.5% 2%;
+  background-color: #108f29;
+  color: white;
+  top: 0px;
+  width: 40%;
+  margin: 1% 30% 0 30%;
+}
+
+#popup i{
+  color: white;
+  top: 0;
+  padding: 0;
+  position: absolute;
+  top: 3%;
+  left: 72.3%;
+
+}
+
 .intro-info {
   padding-top: 1%;
 }
@@ -45,14 +69,13 @@ img {
 
 .story img {
   height: 200px;
-  /*height: 1vh;*/
 }
 
 .link {
   color: white;
   text-decoration: none;
   padding: 2%;
-  background-color: green;
+  background-color: #108f29;
   border-radius: 15px;
 }
 
@@ -87,6 +110,18 @@ a:hover {
 @media only screen and (max-width: 600px) {
   * {
     padding: 0;
+  }
+  
+  #popup{
+    padding: 4%;
+    width: 70%;
+    margin: 3% 10% 0% 10%;
+  }
+
+  #popup i{
+    top: 4%;
+    left: 82.5%;
+    padding-right: 11%;
   }
   .story {
     display: block;

@@ -16,9 +16,16 @@
       <link rel="stylesheet" href="style.css" />
       <link rel="shortcut icon" href="https://cdn.glitch.com/366c5838-3763-4787-9bd2-8eefd6b529ab%2FFrontPage-favicon.png?v=1623623259746"/>
       <script type = "text/javascript" src = "display.js"></script>
+      <script src="https://kit.fontawesome.com/8c8c505dd2.js" crossorigin="anonymous"></script>
     </head>
     <body>
+
       <!-- Introductory Information -->
+      <div id="popup">
+        <a href="#" onclick="close_popup()"><i class="fas fa-times"></i></a>
+        <p id="popup-text">The API (hosted on Heroku) may take up to 10-15 seconds to load the content, due to the limitations of the free plan <a href="https://blog.heroku.com/app_sleeping_on_heroku" target="_blank">(Learn More)</a>.</p>
+      </div>
+
       <div class="intro-info">
         <h1>FrontPage</h1>
         <p>A minimal tech news aggregator</p>

@@ -2,6 +2,11 @@
 // It should look something like this: http://127.0.0.1:5000/news/
 var api_url = 'https://this-front-page.herokuapp.com/news/'
 
+// Used when X icon on popup is clicked. Hides popup.
+function close_popup() {
+	document.getElementById("popup").style.display = "none";
+}
+
 // Used to fetch information from API
 async function get_data() {
 	var data = await fetch(api_url);
