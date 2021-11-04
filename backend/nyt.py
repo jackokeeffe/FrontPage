@@ -7,7 +7,8 @@ def times():
 	html = page.read().decode("utf-8")
 	soup = BeautifulSoup(html, "html.parser")
 	try:
-		main = str(soup.find('ol', {'class': 'css-11jjg ekkqrpp2'}))
+		# ID Changed on 11/04/21 due to HTML change on NYT's homepage.
+		main = str(soup.find('ol', {'class': 'css-11jjg eb97p612'}))
 		directory = main.split('href="')[1].split('">')[0]
 		index = main.split('</a></div>')[1].split('.html">')[1]
 		title = index.split('<')[0]
