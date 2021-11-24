@@ -1,136 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 /* General CSS */
+
 * {
-  font-family: Lato, sans-serif;
-  padding: 0;
-  margin: 0;
+    font-family: Lato, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-a{
-  color: white;
+a {
+    color: white;
 }
 
 body {
- text-align: center;
-
+    text-align: center;
 }
 
 img {
-  align-items: stretch;
+    align-items: stretch;
 }
+
 
 /* Element Based CSS */
-#popup{
-  border-radius: 15px;
-  padding: 1.5% 2% 1.5% 2%;
-  background-color: #108f29;
-  color: white;
-  top: 0px;
-  width: 40%;
-  margin: 1% 30% 0 30%;
+
+#popup {
+    border-radius: 15px;
+    padding: 1.5% 2% 1.5% 2%;
+    background-color: #108f29;
+    color: white;
+    top: 0px;
+    width: 40%;
+    margin: 1% 30% 0 30%;
 }
 
-#popup i{
-  color: white;
-  top: 0;
-  padding: 0;
-  position: absolute;
-  top: 3%;
-  left: 72.3%;
-
+#popup i {
+    color: white;
+    top: 0;
+    padding: 0;
+    position: absolute;
+    top: 3%;
+    left: 72.3%;
 }
 
 .intro-info {
-  padding-top: 1%;
+    padding-top: 1%;
 }
 
 .title {
-  width: 73%;
-  padding-left: 13%;
+    width: 73%;
+    padding-left: 13%;
 }
 
 .description {
-  width: 73%;
-  text-align: left;
-  padding-left: 15%;
+    width: 73%;
+    text-align: left;
+    padding-left: 15%;
 }
 
 .source {
-  padding-bottom: 3%;
+    padding-bottom: 3%;
 }
 
 .story {
-  width: 30%;
-  display:inline-block;
-  padding-top: 5%;
-  vertical-align: top;
+    width: 30%;
+    display: inline-block;
+    padding-top: 5%;
+    vertical-align: top;
 }
 
 .story img {
-  height: 200px;
+    height: 200px;
 }
 
 .link {
-  color: white;
-  text-decoration: none;
-  padding: 2%;
-  background-color: #108f29;
-  border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+    background-color: #108f29;
+    border-radius: 15px;
 }
 
+
 /* Footer Area CSS */
+
 .footer {
-  color: #fff;
-  background-color: #000;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 0.5%;
 }
 
 .footer p {
-  font-size: 125%;
-  display: inline;
+    font-size: 125%;
+    display: inline;
 }
 
 .footer i {
-  font-size: 125%;
-  color: white;
+    font-size: 125%;
+    color: white;
 }
 
 .footer li {
-  display: inline;
+    display: inline;
 }
 
 a:hover {
-  color: #d1d1d1;
+    color: #d1d1d1;
 }
 
-/* Media Query for Phones */
-@media only screen and (max-width: 600px) {
-  * {
-    padding: 0;
-  }
-  
-  #popup{
-    padding: 4%;
-    width: 70%;
-    margin: 3% 10% 0% 10%;
-  }
 
-  #popup i{
-    top: 4%;
-    left: 82.5%;
-    padding-right: 11%;
-  }
-  .story {
-    display: block;
-    width: 100%;
-  }
-  .image {
-    width: 90%;
-  }
-  #last-story {
-    padding-bottom: 12%;
-  }
+/* Button leading to Github Repository for FrontPage */
+
+.github {
+    position: absolute;
+    right: 0;
+    margin-right: 3%;
+}
+
+.github i:hover {
+    color: #d1d1d1;
+}
+
+
+/* Media Query for Phones */
+
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0;
+    }
+    #popup {
+        padding: 4%;
+        width: 80%;
+        margin: 3% 10% 0% 5%;
+    }
+    #popup i {
+        top: 3%;
+        left: 86.5%;
+        padding-right: 11%;
+    }
+    #popup p {
+        width: 90%;
+        margin: auto;
+    }
+    .story {
+        display: block;
+        width: 100%;
+    }
+    .image {
+        width: 90%;
+    }
+    #last-story {
+        padding-bottom: 12%;
+    }
+    #creator {
+        margin-right: 15%;
+    }
+    .github {
+        padding-right: 1%;
+    }
 }

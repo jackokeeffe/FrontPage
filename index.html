@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <title>FrontPage</title>
-      <!-- Basic HTML Meta Tags -->
-      <meta name="keywords" content="tech, news, python, javascript, aggregator"/>
-      <meta name="description" content="A minimal tech news aggregator"/>
-      <meta name="language" content="ES">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!-- OpenGraph Tags -->
-      <meta name="og:title" content="FrontPage"/>
-      <meta name="og:type" content="News"/>
+<head>
+    <title>FrontPage</title>
+    <!-- Basic HTML Meta Tags -->
+    <meta name="keywords" content="tech, news, python, javascript, aggregator" />
+    <meta name="description" content="A minimal tech news aggregator" />
+    <meta name="language" content="ES">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <!-- Importing Documents -->
-      <link rel="stylesheet" href="style.css" />
-      <link rel="shortcut icon" href="https://cdn.glitch.com/366c5838-3763-4787-9bd2-8eefd6b529ab%2FFrontPage-favicon.png?v=1623623259746"/>
-      <script type = "text/javascript" src = "display.js"></script>
-      <script src="https://kit.fontawesome.com/8c8c505dd2.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
+    <!-- OpenGraph Tags -->
+    <meta name="og:title" content="FrontPage" />
+    <meta name="og:type" content="News" />
 
-      <!-- Introductory Information -->
-      <div id="popup">
+    <!-- Importing Documents -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://cdn.glitch.com/366c5838-3763-4787-9bd2-8eefd6b529ab%2FFrontPage-favicon.png?v=1623623259746" />
+    <script type="text/javascript" src="display.js"></script>
+    <script src="https://kit.fontawesome.com/8c8c505dd2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Introductory Information -->
+    <div id="popup">
         <a href="#" onclick="close_popup()"><i class="fas fa-times"></i></a>
         <p id="popup-text">The API (hosted on Heroku) may take up to 10-15 seconds to load the content, due to the limitations of the free plan <a href="https://blog.heroku.com/app_sleeping_on_heroku" target="_blank">(Learn More)</a>.</p>
-      </div>
+    </div>
 
-      <div class="intro-info">
+    <div class="intro-info">
         <h1>FrontPage</h1>
         <p>A minimal tech news aggregator</p>
-      </div>
+    </div>
 
-      <!-- Story Templates -->
-        <div class="story">
-          <div id="nyt">
-          <img class="image" src="" alt="">
-          <b><u><p class="title"></p></u></b>
-          <p class="description"></p>
-          <p class="author"></p>
-          <p class="source"></p>
-          <a class="link" href="#" target="_blank">Read More</a>
+    <!-- Story Templates -->
+    <div class="story">
+        <div id="nyt">
+            <img class="image" src="" alt="">
+            <b><u><p class="title"></p></u></b>
+            <p class="description"></p>
+            <p class="author"></p>
+            <p class="source"></p>
+            <a class="link" href="#" target="_blank">Read More</a>
         </div>
-      </div>
+    </div>
 
     <div class="story">
-      <div id="techCrunch">
-        <img class="image" src="" alt="">
-        <b><u><p class="title"></p></u></b>
-        <p class="description"></p>
-        <p class="author"></p>
-        <p class="source"></p>
-        <a class="link" href="#" target="_blank">Read More</a>
-      </div>
+        <div id="techCrunch">
+            <img class="image" src="" alt="">
+            <b><u><p class="title"></p></u></b>
+            <p class="description"></p>
+            <p class="author"></p>
+            <p class="source"></p>
+            <a class="link" href="#" target="_blank">Read More</a>
+        </div>
     </div>
 
     <div class="story" id="last-story">
-      <div id="cnet">
-        <img class="image" src="" alt="">
-        <b><u><p class="title"></p></u></b>
-        <p class="description"></p>
-        <p class="author"></p>
-        <p class="source"></p>
-        <a class="link" id="story-link" href="#" target="_blank">Read More</a>
-      </div>
+        <div id="cnet">
+            <img class="image" src="" alt="">
+            <b><u><p class="title"></p></u></b>
+            <p class="description"></p>
+            <p class="author"></p>
+            <p class="source"></p>
+            <a class="link" id="story-link" href="#" target="_blank">Read More</a>
+        </div>
     </div>
 
-      <!-- Footer Area -->
-      <div class="footer">
+    <!-- Footer Area -->
+    <div class="footer">
         <ul>
-          <li><p>Created By Jack O'Keeffe (2021)</p></li>
+            <li>
+                <p id="creator">Created By <a href="https://jackokeeffe.me/" target="_blank">Jack O'Keeffe (2021)</a></p>
+                <a href="https://github.com/jackokeeffe/FrontPage" target="_blank">
+                    <p class="github"><i class="fab fa-github"></i></p>
+                </a>
+            </li>
         </ul>
-      </div>
-    </body>
+    </div>
+</body>
+
 </html>
